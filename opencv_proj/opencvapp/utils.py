@@ -3,7 +3,6 @@ import numpy as np
 from django.conf import settings
 import base64
 from random import randint
-import asyncio
 
 def opencv_func(video_file):
 	video = cv2.VideoCapture(video_file)

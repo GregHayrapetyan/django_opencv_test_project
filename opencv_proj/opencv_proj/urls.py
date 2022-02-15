@@ -20,7 +20,7 @@ from opencvapp.views import upload_video
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
-    path('upload_video', upload_video, name="upload_video"),
+    path('', upload_video, name="upload_video"),
     path('admin/', admin.site.urls),
 ]
 if settings.DEBUG:

@@ -1,12 +1,8 @@
 from django.shortcuts import render
-from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-import cv2
-import numpy as np
 from .utils import opencv_func
 from .models import VideoModel
 from .forms import UploadForm
-import asyncio
 
 @csrf_exempt
 def upload_video(request):
